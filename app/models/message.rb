@@ -5,6 +5,6 @@ class Message < ActiveRecord::Base
   validates :body , length: { minimum: 2, maximum: 30 } , presence: true
   # 年齢(age)に0以上の数字だけ入力できる
   validates :age, numericality: {
-            only_integer: true, greater_than_or_equal_to: 0,less_than_or_equal_to:120
+            only_integer: true, greater_than_or_equal_to: 0,less_than_or_equal_to:130
           }, presence: true
 end
